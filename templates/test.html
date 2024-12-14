@@ -1,0 +1,14 @@
+{% extends "layout.html" %}  <!-- This means test.html inherits from layout.html 
+This allows you to reuse common parts of the page (like headers, footers, and styles) without repeating yourself. -->
+{% block body %}  <!-- Start the body section -->
+
+<div class="block1">
+    <h1>Hello {{ name }}!</h1>  <!-- This prints the value of 'name' passed from Flask -->
+    <h2>Here is an interesting quote for you:</h2>
+    <blockquote>
+       {{quote}}
+    </blockquote>
+    <img src="https://i.pinimg.com/originals/ba/3e/74/ba3e74fca9813417524309b7d89c5f2f.gif" alt="Gintoki Sakata">
+</div>
+
+{% endblock %}  <!-- End the body section -->
